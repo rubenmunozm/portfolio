@@ -1,0 +1,89 @@
+{{extend 'layout.html'}}
+
+<style type="text/css">
+.ui-jqgrid tr.jqgrow td {
+    height: 70px;
+    white-space: normal;
+}
+   th.ui-th-column div{
+        white-space:normal !important;
+        height:auto !important;
+        padding:2px;
+    }  
+
+</style>
+<style type="text/css">
+  .box{
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 2px solid #18bc9c;/*gris-8f8d8f verde(navbar)-18bc9c*/
+    background-color: #2c3e50;
+    -webkit-box-shadow: -8px 10px 14px -3px rgba(189,179,189,1);
+    -moz-box-shadow: -8px 10px 14px -3px rgba(189,179,189,1);
+    box-shadow: -8px 10px 14px -3px rgba(189,179,189,1);
+  }
+
+</style>
+
+<script type="text/javascript" >
+jQuery(document).ready(function(){
+  jQuery("#list").jqGrid({
+    url:'{{=URL(r=request,f='call',args=['json','get_rows'])}}',
+    data: "{}",
+    datatype: 'json',
+    mtype: 'GET',
+    contentType: "application/json; charset=utf-8",
+    cellEdit: false,
+    cellsubmit:'remote',
+    cellurl: '{{=URL(r=request,f='call',args=['json','save_cell'])}}',
+    complete: function(jsondata, stat) {
+        if (stat == "success") {
+            var thegrid = jQuery("#list")[0];
+            thegrid.addJSONData(JSON.parse(jsondata.responseText).d);
+        }
+    },
+
+    
+    
+
+    colNames:['Recibido','Nombre','Correo','Telefono','Mensaje',''],
+    colModel :[
+      {name:'created_on', index:'created_on',editable:false, width:150,searchoptions:{sopt:['cn', 'nc']}},
+      {name:'nombre', index:'nombre',editable:false, width:150,searchoptions:{sopt:['cn', 'nc']}},
+      {name:'correo', index:'correo',editable:false, width:150,searchoptions:{sopt:['cn', 'nc']}},
+      {name:'telefono', index:'telefono',editable:false, width:150,searchoptions:{sopt:['cn', 'nc']}},
+      {name:'mensaje', index:'mensaje',editable:false, width:400,searchoptions:{sopt:['cn', 'nc']}},
+      {name:'eliminar', index:'eliminar',editable:false, width:100,searchoptions:{sopt:['cn', 'nc']}},
+      
+      
+    ],
+    pager: '#pager',
+    rowNum:10,
+    rowList:[10,20,30],
+    sortname: 'created_on',
+    sortorder: 'desc',
+    viewrecords: true,
+    caption: 'Mensajes recibidos',
+    altRows:true,
+    height: 'auto',
+    width: 'auto',
+    
+ 
+  });
+
+
+
+});
+</script>
+<h1>Mensajes Recibidos</h1>
+<hr>
+<br>
+<div class="row box">
+<br><br>
+<div class="span12" style="margin-left:51px;">
+<table id="list"></table>
+<div id="pager"></div>
+<br><br>
+</div>
+</div>
