@@ -1,4 +1,6 @@
 {{extend 'layout.html'}}
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 
 <style type="text/css">
 .ui-jqgrid tr.jqgrow td {
@@ -76,14 +78,34 @@ jQuery(document).ready(function(){
 
 });
 </script>
-<h1>Mensajes Recibidos</h1>
-<hr>
-<br>
 <div class="row box">
-<br><br>
-<div class="span12" style="margin-left:51px;">
-<table id="list"></table>
-<div id="pager"></div>
-<br><br>
-</div>
+  <br>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#msg" data-toggle="tab">Mensajes Recibidos</a></li>
+    <li class=""><a href="#visits" data-toggle="tab">Visitas a la Página</a></li>
+  </ul>
+
+  <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade active in" id="msg">
+      
+      <br>
+      <div class="row ">
+        <br>
+        <div class="span12" style="margin-left:51px;">
+          <table id="list"></table>
+          <div id="pager"></div>
+          <br><br>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="visits">
+    
+    <div class="row "><br>
+      <div class="span12" style="margin-left:61px;">
+        <h3 style="color:white;"><i class="fa fa-line-chart fa-2x"></i>&nbsp;&nbsp;Visitas a la página:  {{=visits.visits}}</h3>
+        <h6 style="color:white;">Desde 11/10/2014 <small>(anterior a esa fecha 400 +)</small></h6>
+        <br>
+      </div>
+    </div><br>
+  </div>
 </div>
