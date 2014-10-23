@@ -18,7 +18,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #322E3A;/*!!!*/
 }
 
 h1,
@@ -65,30 +65,30 @@ hr.star-primary:after {
 }
 
 hr.star-topic {
-    border-color: #fff;
+    border-color: #ebebeb;
 }
 
 hr.star-topic:after {
-    color: #fff;
-    background-color: #18bc9c;
+    color: #ebebeb;
+    background-color: #1C1822; /*verde*/
 }
 
 hr.star-light {
-    border-color: #fff;
+    border-color: #ebebeb;
 }
 
 hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
+    color: #ebebeb;
+    background-color: #1C1822; /*verde*/
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: #322E3A;
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #fff;
+    color: #322E3A;
+    background-color: #ebebeb;
 }
 
 .img-centered {
@@ -97,8 +97,8 @@ hr.star-primary:after {
 
 header {
     text-align: center;
-    color: #fff;
-    background: #18bc9c;
+    color: #ebebeb;
+    background: #1C1822; /*el verde original era 18bc9c ,,,, grismoradon=39334B*/
 }
 
 header .container {
@@ -196,8 +196,8 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background: #18bc9c;
+    color: #ebebeb; /*se intercambiaron todos los fff por el ebebeb*/
+    background: #1C1822; /*el verde original era 18bc9c */
 }
 
 @media(max-width:767px) {
@@ -227,7 +227,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(50,46,58,.9);/*!!! rgba(24,188,156,.9)*/
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -245,7 +245,7 @@ section.success {
     margin-top: -12px;
     text-align: center;
     font-size: 20px;
-    color: #fff;
+    color: #ebebeb;/*ebebeb*/
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content i {
@@ -269,9 +269,9 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
+    border: solid 2px #338041;
     font-size: 20px;
-    color: #fff;
+    color: #ebebeb;
     background: 0 0;
     transition: all .3s ease-in-out;
 }
@@ -280,9 +280,9 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #18bc9c;
-    background: #fff;
+    border: solid 2px #ebebeb;
+    color: #338041;/*!!! tenia el verde 18bc9c*/
+    background: #ebebeb;
 }
 
 .floating-label-form-group {
@@ -334,7 +334,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #338041; /*tenia 18bc9c*/
 }
 
 form .row:first-child .floating-label-form-group {
@@ -342,7 +342,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 footer {
-    color: #fff;
+    color: #ebebeb;
 }
 
 footer h3 {
@@ -351,7 +351,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #322E3A;
 }
 
 footer .footer-col {
@@ -360,14 +360,14 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #171617;/*original- azul tema, poco mas obscuro*/
 }
 
 .btn-social {
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 2px solid #fff;
+    border: 2px solid #ebebeb;
     border-radius: 100%;
     text-align: center;
     font-size: 20px;
@@ -444,7 +444,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #2c3e50;
+    background-color: #322E3A;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -454,7 +454,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #2c3e50;
+    background-color: #322E3A;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
