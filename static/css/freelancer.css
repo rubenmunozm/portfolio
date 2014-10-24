@@ -98,7 +98,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #ebebeb;
-    background: #1C1822; /*el verde original era 18bc9c ,,,, grismoradon=39334B*/
+    background: #1C1822; /*el verde original era 18bc9c ,,,, grismoradon,paracel=39334B*/
 }
 
 header .container {
@@ -203,6 +203,21 @@ section.success {
 @media(max-width:767px) {
     section {
         padding: 75px 0;
+    }
+
+    /*se agregan estas lineas para que en cel, sea un poco mas claro.,,, grismoradon,paracel=39334B*/
+    header {
+    background: #39334B; 
+    }
+    section.success {
+    background: #39334B; 
+    }
+    hr.star-topic:after {
+    background-color: #39334B; 
+    }
+    hr.star-light:after {
+    color: #ebebeb;
+    background-color: #39334B; /*verde*/
     }
 
     section.first {
