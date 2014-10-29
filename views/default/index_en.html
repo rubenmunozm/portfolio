@@ -89,22 +89,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
+                    <h2>Proyectos</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{{=URL('static','img/portfolio/uvm.jpg')}}" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -114,19 +104,37 @@
                         <img src="{{=URL('static','img/portfolio/cc.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{=URL('static','img/portfolio/uvm.jpg')}}" class="img-responsive" alt="">
+                    </a>
+                </div>                
+                <div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="{{=URL('static','img/portfolio/safe.png')}}" class="img-responsive" alt="">
+                        <img src="{{=URL('static','img/portfolio/safe2.png')}}" class="img-responsive" alt="">
                     </a>
-                </div>
-                
-                
-            </div>
+                </div>             
+                <div class="col-sm-3 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{=URL('static','img/portfolio/logo2.jpg')}}" class="img-responsive" alt="">
+                    </a>
+                </div>         
+            </div>            
         </div>
     </section>
 
@@ -366,7 +374,7 @@
                         <div class="modal-body">
                             <h2>Paste-bin</h2>
                             <hr class="star-primary">
-                            <img src="{{=URL('static','img/portfolio/safe.png')}}" width="250px;" class="img-responsive img-centered" alt="">
+                            <img src="{{=URL('static','img/portfolio/safe2.png')}}" width="250px;" class="img-responsive img-centered" alt="">
                             <p align="justify">Web Application created in Web2py with Bootstrap, which allows users to paste code snippets, visible to a targeted audience. Contains a search by title engine, dynamic display for last seen or created, editing enabled and user control if necessary. Includes syntax detection and a detailed table of the pastes, with search filters.<a href="https://uvmhmoing.pythonanywhere.com/pastebin" target="_blank">&nbsp;<h3>Go to web application <i class="fa fa-arrow-right"></i></h3></a></p>
                             <ul class="list-inline item-details">
                                 <ul class="list-inline item-details">
@@ -381,6 +389,42 @@
                                 </li>
                                 </li>
                             </ul>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Sinai Baptist Church</h2>
+                            <hr class="star-primary">
+                            <img src="{{=URL('static','img/portfolio/logo2.jpg')}}" width="250px;" class="img-responsive img-centered" alt="">
+                            <p align="justify">Baptist church settled over 50 years ago in Hermosillo, Sonora, Mexico. A website was developed where detailed information about the congregation, church´s history, location via Google Maps, meetings & schedules can be found. It is possible to access to audios, images, amongst other resources; so as sending prayer requests through a general public inbox.<a href="http://www.ibsinai.com" target="_blank">&nbsp;<h3>Go to website <i class="fa fa-arrow-right"></i></h3></a></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong style="color:#41BC58">Sinai Baptist Church</strong>
+                                </li>
+                                <li>Date:
+                                    <strong style="color:#41BC58">October 2014</strong>
+                                </li>
+                                <li>Service:
+                                    <strong style="color:#41BC58">Web Design & Development</strong>
+                                </li>
+                                </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
