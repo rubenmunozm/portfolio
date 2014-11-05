@@ -21,7 +21,8 @@
     <link href="{{=URL('static','font-awesome-4.1.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link rel="shortcut icon" href="{{=URL('static','images/rm.png')}}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{=URL('static','images/rm.png')}}">
 
 </head>
 
@@ -73,11 +74,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="{{=URL('static','img/3.jpg')}}" width="256px;" height="256px;" alt="">
+                    <img data-sr="reset, scale up 50%,wait 0.15s ,over 2s" class="img-responsive img-circle" src="{{=URL('static','img/3.jpg')}}" width="256px;" height="256px;" alt="">
                     <div class="intro-text">
-                        <span class="name">Ruben Muñoz</span>
-                        <hr class="star-topic">
-                        <span class="skills">Computer Systems Engineer - Web Developer</span>
+                        <span data-sr="enter left,wait 0.8s ,over 1s, move 200px" class="name">Ruben Muñoz</span>
+                        <hr data-sr="scale up 50%,wait 0.15s ,over 2s" class="star-topic">
+                        <span data-sr="enter right,wait 0.8s ,over 1s, move 200px" class="skills">Computer Systems Engineer - Web Developer</span>
                     </div>
                 </div>
             </div>
@@ -94,7 +95,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3 portfolio-item">
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.15s,over 1.3s, move 40px">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -104,7 +105,7 @@
                         <img src="{{=URL('static','img/portfolio/cc.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-3 portfolio-item">
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.30s,over 1.3s, move 40px">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -114,7 +115,7 @@
                         <img src="{{=URL('static','img/portfolio/uvm.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>                
-                <div class="col-sm-3 portfolio-item">
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.45s,over 1.3s, move 40px">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -124,7 +125,7 @@
                         <img src="{{=URL('static','img/portfolio/safe2.png')}}" class="img-responsive" alt="">
                     </a>
                 </div>             
-                <div class="col-sm-3 portfolio-item">
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.60s,over 1.3s, move 40px">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -148,20 +149,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-10 col-lg-offset-1" data-sr="enter top,wait 0.3s,over 1.3s, move 50px">
                     <h3 style="color:#338041;">Career Objective:</h3>
                     <p align="justify">To demonstrate knowledge and efficiency in the field  of computer systems engineering while simultaneously contributing to the progress of the company as well as my own professional development; providing skills, training myself to continuously stay updated, and learning new disciplines and technologies that would complement my profession.</p>
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-1">
+                <div class="col-lg-4 col-lg-offset-1" data-sr="enter left,wait 0.6s,over 1.2s, move 150px">
                     <p align="justify">
                         <b style="color:#338041;">Skills:</b> Communication, teamwork, planning, organization, problem solving.<br><br>
                         <b style="color:#338041;">Languages:</b><br>Spanish - Native language<br> English - Fluent<br> German - Conversational
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-sr="enter right,wait 0.8s,over 1.2s, move 150px">
                     <p align="justify">
                     <b style="color:#338041;">Technologies:</b> Operating Systems: Windows, Linux, Android. Languages: C#, Java, Python, C++, MySQL & SQL, PHP, JavaScript, HTML, XML, CSS. Basic knowledge on networking. Android Mobile Apps Development with Eclipse IDE. Web Development with Web2py (Model-view-controller) using Bootstrap (responsive). Version Control System (Git). Object-oriented programming. Analysis and Design of Systems and Databases. Microsoft Office.
                     </p>    
@@ -202,7 +203,7 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
-                                <input name="nombre" type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name."> 
+                                <input data-sr="wait 0.5s, enter right,over 1.5s, move 200px" name="nombre" type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name."> 
                                 <!-- poner en name, el nombre del campo tal como esta en la db -->
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -210,28 +211,28 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>E-mail Address</label>
-                                <input name="correo" type="email" class="form-control" placeholder="E-mail Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <input data-sr="wait 0.5s, enter right,over 1.5s, move 200px" name="correo" type="email" class="form-control" placeholder="E-mail Address" id="email" required data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Phone Number</label>
-                                <input name="telefono" type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <input data-sr="wait 0.5s, enter right,over 1.5s, move 200px" name="telefono" type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea name="mensaje" rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea data-sr="wait 0.5s, enter right,over 1.5s, move 200px" name="mensaje" rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <br>
                         <div id="success"></div>
                         <div class="row">
-                            <div class="form-group col-xs-12">
+                            <div class="form-group col-xs-12" data-sr="enter right,over 2s, move 100px">
                                 <button type="submit" class="btn btn-success btn-lg">Send</button>
                                 <!-- tipo submir -->
                                 <input type="hidden" name="_formname" value="test" />
@@ -249,17 +250,17 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-6">
+                    <div class="footer-col col-md-6" data-sr="enter right,over 2s, move 100px">
                         <h3>Established in</h3>
                         <p>Hermosillo, Sonora<br>México</p>
                     </div>
                     <div class="footer-col col-md-6">
                         <h3>Online</h3>
                         <ul class="list-inline">
-                            <li>
+                            <li data-sr="enter right,over 2s, move 100px">
                                 <a href="https://github.com/rubenmunozm" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-lg fa-github"></i></a>
                             </li>
-                            <li>
+                            <li data-sr="enter right,over 2s, move 100px">
                                 <a href="https://plus.google.com/115189296775167957540/about" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
                             
@@ -448,6 +449,11 @@
 
     
     <script src="{{=URL('static','js/freelancer.js')}}"></script>
+    <script type='text/javascript' src='{{=URL('static','js/smoothscroll.js')}}'></script>
+    <script type='text/javascript' src='{{=URL('static','js/scrollReveal.js')}}'></script>
+    <script>
+        window.sr = new scrollReveal();
+    </script>
 
 </body>
 

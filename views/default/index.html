@@ -18,6 +18,8 @@
     <link href="{{=URL('static','font-awesome-4.1.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="{{=URL('static','images/rm.png')}}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{=URL('static','images/rm.png')}}">
 
     
 
@@ -70,11 +72,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="{{=URL('static','img/3.jpg')}}" width="256px;" height="256px;" alt="">
+                    <img data-sr="reset, scale up 50%,wait 0.15s ,over 2s" class="img-responsive img-circle" src="{{=URL('static','img/3.jpg')}}" width="256px;" height="256px;" alt="">
                     <div class="intro-text">
-                        <span class="name">Rubén Muñoz</span>
-                        <hr class="star-topic">
-                        <span class="skills">Ingeniero en Sistemas Computacionales - Desarrollador Web</span>
+                        <span data-sr="enter left,wait 0.8s ,over 1s, move 200px" class="name">Rubén Muñoz</span>
+                        <hr data-sr="scale up 50%,wait 0.15s ,over 2s" class="star-topic">
+                        <span data-sr="enter right,wait 0.8s ,over 1s, move 200px" class="skills">Ingeniero en Sistemas Computacionales - Desarrollador Web</span>
                     </div>
                 </div>
             </div>
@@ -85,12 +87,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Proyectos</h2>
+                    <h2 >Proyectos</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-3 portfolio-item">
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.15s,over 1.3s, move 40px">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -100,7 +102,7 @@
                         <img src="{{=URL('static','img/portfolio/cc.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>
-                <div class="col-sm-3 portfolio-item">
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.30s,over 1.3s, move 40px">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -110,7 +112,7 @@
                         <img src="{{=URL('static','img/portfolio/uvm.jpg')}}" class="img-responsive" alt="">
                     </a>
                 </div>                
-                <div class="col-sm-3 portfolio-item">
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.45s,over 1.3s, move 40px">
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -120,7 +122,7 @@
                         <img src="{{=URL('static','img/portfolio/safe2.png')}}" class="img-responsive" alt="">
                     </a>
                 </div>             
-                <div class="col-sm-3 portfolio-item">
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.60s,over 1.3s, move 40px">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -144,20 +146,20 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-10 col-lg-offset-1" data-sr="enter top,wait 0.3s,over 1.3s, move 50px">
                     <h3 style="color:#338041;">Objetivo:</h3>
                     <p align="justify">Poner en práctica mis conocimientos académicos en los ámbitos relacionados a la ingeniería en sistemas computacionales para poder contribuir positivamente al desarrollo de la empresa y a mi desarrollo profesional; aportando mis conocimientos y habilidades, capacitándome en la medida de lo posible para estar actualizado y aprendiendo nuevas disciplinas y actividades que sirvan de complemento a mi profesión.</p>
                 </div>
             </div>
             <br>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-1">
+                <div class="col-lg-4 col-lg-offset-1" data-sr="enter left,wait 0.6s,over 1.2s, move 150px">
                     <p align="justify">
                         <b style="color:#338041;">Habilidades:</b> Trabajo en equipo, planeación, organización, comunicación, solución de problemas.<br><br>
                         <b style="color:#338041;">Idiomas:</b><br>Español - Nativo<br>Inglés - Avanzado<br>Alemán - Intermedio
                     </p>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-sr="enter right,wait 0.8s,over 1.2s, move 150px">
                     <p align="justify">    
                     <b style="color:#338041;">Tecnologías:</b> Sistemas Operativos: Windows, Linux, Android. Lenguajes: C#, Java, Python, C++, MySQL y SQL, PHP, JavaScript, HTML, XML, CSS. Conocimientos de Redes. Desarrollo de Aplicaciones Móviles Android en Eclipse IDE. Desarrollo Web en Web2py (Modelo vista-controlador) con Bootstrap (diseño responsivo). Sistema de Control de Versiones (Git). Programación Orientada a Objetos. Análisis y Diseño de Sistemas y Bases de Datos. Microsoft Office.
                     </p>
@@ -194,10 +196,10 @@
 
                     <!--YO NO USO ESO, ES PHP.... para qu funcione el form se necesita lo que comentare -->
                     <form action="#" enctype="multipart/form-data" method="post"> <!--Esta linea-->
-                        <div class="row control-group">
+                        <div class="row control-group" >
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nombre</label>
-                                <input name="nombre" type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Please enter your name."> 
+                                <input data-sr="wait 0.5s, enter right,over 1.5s, move 200px" name="nombre" type="text" class="form-control" placeholder="Nombre" id="name" required data-validation-required-message="Please enter your name."> 
                                 <!-- poner en name, el nombre del campo tal como esta en la db -->
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -205,28 +207,28 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Correo electrónico</label>
-                                <input name="correo" type="email" class="form-control" placeholder="Correo electrónico" id="email" required data-validation-required-message="Please enter your email address.">
+                                <input data-sr="wait 0.5s, enter right,over 1.5s, move 200px" name="correo" type="email" class="form-control" placeholder="Correo electrónico" id="email" required data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Teléfono</label>
-                                <input name="telefono" type="tel" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <input data-sr="wait 0.5s, enter right,over 1.5s, move 200px" name="telefono" type="tel" class="form-control" placeholder="Teléfono" id="phone" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Mensaje</label>
-                                <textarea name="mensaje" rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea data-sr="wait 0.5s, enter right,over 1.5s, move 200px" name="mensaje" rows="5" class="form-control" placeholder="Mensaje" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <br>
                         <div id="success"></div>
                         <div class="row">
-                            <div class="form-group col-xs-12">
+                            <div class="form-group col-xs-12" data-sr="enter right,over 2s, move 100px">
                                 <button type="submit" class="btn btn-success btn-lg">Enviar</button>
                                 <!-- tipo submit -->
                                 <input type="hidden" name="_formname" value="test" />
@@ -244,17 +246,17 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-6">
+                    <div class="footer-col col-md-6" data-sr="enter,over 1s">
                         <h3>Me encuentro en</h3>
                         <p>Hermosillo, Sonora<br>México</p>
                     </div>
                     <div class="footer-col col-md-6">
                         <h3>En la Web</h3>
                         <ul class="list-inline">
-                            <li>
+                            <li data-sr="enter,over 1s">
                                 <a href="https://github.com/rubenmunozm" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-lg fa-github"></i></a>
                             </li>
-                            <li>
+                            <li data-sr="enter,over 1s">
                                 <a href="https://plus.google.com/115189296775167957540/about" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
                             </li>
                             
@@ -443,6 +445,11 @@
 
     
     <script src="{{=URL('static','js/freelancer.js')}}"></script>
+    <script type='text/javascript' src='{{=URL('static','js/smoothscroll.js')}}'></script>
+    <script type='text/javascript' src='{{=URL('static','js/scrollReveal.js')}}'></script>
+    <script>
+        window.sr = new scrollReveal();
+    </script>
 
 </body>
 
