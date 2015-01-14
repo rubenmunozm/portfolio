@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<style type="text/css">
+    @media screen and (min-width: 768px) {
+        .oculto-sm{
+        padding-left: 8.1%;
+        }
+        .oculto-sm2{
+        padding-right: 4.1%;
+        padding-left: 4.1%;
+        }
+    }
+</style>
 <html lang="en">
 
 <head>
@@ -90,7 +101,12 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
+            
+            <div class="row oculto-sm">
+            
+                <div class="col-sm-1">
+                    
+                </div>
                 <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.15s,over 1.3s, move 40px">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -100,6 +116,33 @@
                         </div>
                         <img src="{{=URL('static','img/portfolio/cc.jpg')}}" class="img-responsive" alt="">
                     </a>
+                </div>                            
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.30s,over 1.3s, move 40px">
+                    <a href="#modalviaco" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{=URL('static','img/portfolio/viaco.png')}}" class="img-responsive" alt="">
+                    </a>
+                </div>            
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.45s,over 1.3s, move 40px">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{=URL('static','img/portfolio/logo2.jpg')}}" class="img-responsive" alt="">
+                    </a>
+                </div>         
+            </div> 
+
+            <div class="row oculto-sm2">
+
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.30s,over 1.3s, move 40px">
+                    
                 </div>
                 <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.30s,over 1.3s, move 40px">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -120,18 +163,11 @@
                         </div>
                         <img src="{{=URL('static','img/portfolio/safe2.png')}}" class="img-responsive" alt="">
                     </a>
-                </div>             
-                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.60s,over 1.3s, move 40px">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{{=URL('static','img/portfolio/logo2.jpg')}}" class="img-responsive" alt="">
-                    </a>
-                </div>         
-            </div>            
+                </div>
+                            
+                     
+            </div>
+
         </div>
     </section>
 
@@ -316,6 +352,42 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="modalviaco" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h2>VIACO</h2>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <hr class="star-primary">
+                            <img src="{{=URL('static','img/portfolio/v.png')}}" class="img-responsive img-centered" width="250px;" alt="">
+                            <p align="justify">Mexican company established in Hermosillo Sonora, formed through the strategic areas of: Architecture, Construction, Imports and Sale of construction materials. Their website was developed where information about the services offered by the company can be found.<a href="http://viaco.com.mx" target="_blank">&nbsp;<h3>Zur Website<i class="fa fa-arrow-right"></i></h3></a></p>
+
+                            
+                            <ul class="list-inline item-details">
+                                <li>Kunde:
+                                    <strong style="color:#41BC58">VIACO</strong>
+                                </li>
+                                <li>Datum:
+                                    <strong style="color:#41BC58">Januar 2015 </strong>
+                                </li>
+                                <li>Dienst:
+                                    <strong style="color:#41BC58">Web Design & Entwicklung</strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Schließen</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -331,7 +403,7 @@
                             <h2>Antioquía Calvary Chapel</h2>
                             <hr class="star-primary">
                             <img src="{{=URL('static','img/portfolio/cc.jpg')}}" width="250px;" class="img-responsive img-centered" alt="">
-                            <p align="justify">Christian church settled over 10 years ago in Hermosillo, Sonora, Mexico. A website was developed where detailed information about the congregation, church´s history, location via Google Maps, meetings & schedules can be found. It is possible to do donations via Google Wallet; access to audios, images, amongst other resources; so as sending prayer requests through a general public inbox.<a href="http://antioquiacc.com/welcome/default/index_en" target="_blank">&nbsp;<h3>Zur Website <i class="fa fa-arrow-right"></i></h3></a></p>
+                            <p align="justify">Christian church settled over 10 years ago in Hermosillo, Sonora, Mexico. A website was developed where detailed information about the congregation, church´s history, location via Google Maps, meetings & schedules can be found. It is possible to do donations via Google Wallet; access to news, images, amongst other resources; so as sending prayer requests through a general public inbox.<a href="http://antioquiacc.com/welcome/default/index_en" target="_blank">&nbsp;<h3>Zur Website <i class="fa fa-arrow-right"></i></h3></a></p>
                             <ul class="list-inline item-details">
                                 <li>Kunde:
                                     <strong style="color:#41BC58">Antioquía Calvary Chapel Kirche</strong>
@@ -404,7 +476,7 @@
                             <h2>Sinai Baptist Kirche</h2>
                             <hr class="star-primary">
                             <img src="{{=URL('static','img/portfolio/logo2.jpg')}}" width="250px;" class="img-responsive img-centered" alt="">
-                            <p align="justify">Baptist church settled over 50 years ago in Hermosillo, Sonora, Mexico. A website was developed where detailed information about the congregation, church´s history, location via Google Maps, meetings & schedules can be found. It is possible to access to reports, images, amongst other resources; so as sending prayer requests through a general public inbox.<a href="http://www.ibsinai.com" target="_blank">&nbsp;<h3>Zur Website <i class="fa fa-arrow-right"></i></h3></a></p>
+                            <p align="justify">Baptist church settled over 50 years ago in Hermosillo, Sonora, Mexico. A website was developed where detailed information about the congregation, church´s history, location via Google Maps, meetings & schedules can be found. It is possible to access to news, images, amongst other resources; so as sending prayer requests through a general public inbox.<a href="http://www.ibsinai.com" target="_blank">&nbsp;<h3>Zur Website <i class="fa fa-arrow-right"></i></h3></a></p>
                             <ul class="list-inline item-details">
                                 <li>Kunde:
                                     <strong style="color:#41BC58">Sinai Baptist Kirche</strong>

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <style type="text/css">
-    
+    @media screen and (min-width: 768px) {
+        .oculto-sm{
+        padding-left: 8.1%;
+        }
+        .oculto-sm2{
+        padding-right: 4.1%;
+        padding-left: 4.1%;
+        }
+    }
 </style>
 <html lang="en">
 
@@ -90,8 +98,12 @@
                     <h2 >Proyectos</h2>
                     <hr class="star-primary">
                 </div>
-            </div>
-            <div class="row">
+            </div>  
+            <div class="row oculto-sm">
+            
+                <div class="col-sm-1">
+                    
+                </div>
                 <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.15s,over 1.3s, move 40px">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -101,6 +113,33 @@
                         </div>
                         <img src="{{=URL('static','img/portfolio/cc.jpg')}}" class="img-responsive" alt="">
                     </a>
+                </div>                            
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.30s,over 1.3s, move 40px">
+                    <a href="#modalviaco" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{=URL('static','img/portfolio/viaco.png')}}" class="img-responsive" alt="">
+                    </a>
+                </div>            
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.45s,over 1.3s, move 40px">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="{{=URL('static','img/portfolio/logo2.jpg')}}" class="img-responsive" alt="">
+                    </a>
+                </div>         
+            </div> 
+
+            <div class="row oculto-sm2">
+
+                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.30s,over 1.3s, move 40px">
+                    
                 </div>
                 <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.30s,over 1.3s, move 40px">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -121,18 +160,11 @@
                         </div>
                         <img src="{{=URL('static','img/portfolio/safe2.png')}}" class="img-responsive" alt="">
                     </a>
-                </div>             
-                <div class="col-sm-3 portfolio-item" data-sr="enter bottom,wait 0.60s,over 1.3s, move 40px">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="{{=URL('static','img/portfolio/logo2.jpg')}}" class="img-responsive" alt="">
-                    </a>
-                </div>         
-            </div>            
+                </div>
+                            
+                     
+            </div>
+
         </div>
     </section>
 
@@ -324,6 +356,42 @@
             </div>
         </div>
     </div>
+    <div class="portfolio-modal modal fade" id="modalviaco" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h2>VIACO</h2>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <hr class="star-primary">
+                            <img src="{{=URL('static','img/portfolio/v.png')}}" class="img-responsive img-centered" width="250px;" alt="">
+                            <p align="justify">Empresa mexicana creada en Hermosillo Sonora, formada de áreas estratégicas: Arquitectura, Construcción, Venta de materiales para la Construcción e Importaciones. Se desarrolló su página web donde se puede tener acceso a información de los servicios que brinda la empresa.<a href="http://viaco.com.mx" target="_blank">&nbsp;<h3>Ir a la página <i class="fa fa-arrow-right"></i></h3></a></p>
+
+                            
+                            <ul class="list-inline item-details">
+                                <li>Cliente:
+                                    <strong style="color:#41BC58">VIACO</strong>
+                                </li>
+                                <li>Fecha:
+                                    <strong style="color:#41BC58">Enero 2015 </strong>
+                                </li>
+                                <li>Servicio:
+                                    <strong style="color:#41BC58">Diseño y Desarrollo Web </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -339,7 +407,7 @@
                             <h2>Antioquía Calvary Chapel</h2>
                             <hr class="star-primary">
                             <img src="{{=URL('static','img/portfolio/cc.jpg')}}" width="250px;" class="img-responsive img-centered" alt="">
-                            <p align="justify">Iglesia con mas de 10 años de antigúedad localizada en Hermosillo, Sonora, México. Se desarrolló su página web donde se puede obtener información detallada de la congregación, tal como su historia, su ubicación via Google Maps, Horarios y Reuniones, etc. Es posible donar via Google Wallet; acceder a Audios, Fotos y otros recursos; así como un buzón de peticiones de oración para visitantes en general.<a href="http://antioquiacc.com" target="_blank">&nbsp;<h3>Ir a la página <i class="fa fa-arrow-right"></i></h3></a></p>
+                            <p align="justify">Iglesia con mas de 10 años de antigúedad localizada en Hermosillo, Sonora, México. Se desarrolló su página web donde se puede obtener información detallada de la congregación, tal como su historia, su ubicación via Google Maps, Horarios y Reuniones, etc. Es posible donar via Google Wallet; acceder a imágenes, noticias y otros recursos; así como un buzón de peticiones de oración para visitantes en general.<a href="http://antioquiacc.com" target="_blank">&nbsp;<h3>Ir a la página <i class="fa fa-arrow-right"></i></h3></a></p>
                             <ul class="list-inline item-details">
                                 <li>Cliente:
                                     <strong style="color:#41BC58">Iglesia Antioquía Calvary Chapel</strong>
@@ -411,7 +479,7 @@
                             <h2>Iglesia Bautista Sinaí</h2>
                             <hr class="star-primary">
                             <img src="{{=URL('static','img/portfolio/logo2.jpg')}}" width="250px;" class="img-responsive img-centered" alt="">
-                            <p align="justify">Iglesia Bautista con mas de 50 años de antigúedad localizada en Hermosillo, Sonora, México. Se desarrolló su página web donde se puede obtener información detallada de la congregación, tal como su historia, su ubicación via Google Maps, Horarios y Reuniones, etc. Es posible acceder a Audios, Fotos y otros recursos; así como un buzón de peticiones de oración para visitantes en general.<a href="http://www.ibsinai.com" target="_blank">&nbsp;<h3>Ir a la página <i class="fa fa-arrow-right"></i></h3></a></p>
+                            <p align="justify">Iglesia Bautista con mas de 50 años de antigúedad localizada en Hermosillo, Sonora, México. Se desarrolló su página web donde se puede obtener información detallada de la congregación, tal como su historia, su ubicación via Google Maps, Horarios y Reuniones, etc. Es posible acceder a imágenes, noticias y otros recursos; así como un buzón de peticiones de oración para visitantes en general.<a href="http://www.ibsinai.com" target="_blank">&nbsp;<h3>Ir a la página <i class="fa fa-arrow-right"></i></h3></a></p>
                             <ul class="list-inline item-details">
                                 <li>Cliente:
                                     <strong style="color:#41BC58">Iglesia Bautista Sinaí</strong>
